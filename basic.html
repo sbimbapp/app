@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+        body {
+		background-color: skyblue;
+        background-image: url("helix.jpg");
+        background-blend-mode:soft-light;
+        background-size: cover;
+		text-align: center;
+		font-family: calibri;
+		margin-bottom: 50px;
+        }
+        h1 {
+        font-family: "Comic Sans MS";
+		color: maroon;
+		font-size: 250%;			
+		text-align: center;	    
+        }
+        
+        p.first {
+        font-family: calibri;
+		font-size: 130%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+        }
+        
+        p.second {
+        font-family: calibri;
+		font-size: 115%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+        }
+        
+        .wrapper0 {
+         
+        margin-left: 90px;
+        margin-right: auto;
+        float:left;
+        height: 80%;
+        }
+        
+        .wrapper1 {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-column-gap: 10px;
+        background-color: transparent;
+        width: 40%;  
+        margin-left: auto;
+        margin-right: auto;
+        }
+        
+        .wrapper2 {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-column-gap: 10px;
+        background-color: transparent;
+        width: 45%;  
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        }
+        
+        .wrapper3 {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-column-gap: 10px;
+        background-color: transparent;
+        width: 45%;  
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        }
+        
+        .box_a,.box_b,.box_c,.box_d {
+        background-color: deepskyblue;
+        color: black;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 150%;
+        text-align:center;
+        }
+        .box_e,.box_f {
+        background-color: firebrick;
+        color: black;
+        border-radius: 20px;
+        padding: 30px;
+        font-size: 120%;
+        }
+    
+        footer {
+		position:fixed;
+		bottom:0;
+		width:100%;
+		height:auto;
+		background-color: indianred;
+		font-family: calibri;
+		text-align: center;
+	    }
+    
+    </style>
+
+    <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+<body>
+
+    <h1>*SCOPing GENETICS*</h1>
+    <p class=first>Follow the links below to find out more...</p>
+    
+    <br>
+    <br>
+    
+    <div class="wrapper0">
+        <img src="arrow.png">
+    </div>
+    
+    <div class="wrapper1">
+        <div class="box_a" id="box_a"><a href="humans.html" style="text-decoration: none" style = "color:black"><font color=black><b>YOU!!</b></font></a></div>
+        <p class=third><b>&darr;</b></p>
+        <div class="box_b" id="box_b"><a href="cells.html" style="text-decoration: none" style = "color:black"><font color=black><b>CELLS</b></font></a></div>
+        <p class=third><b>&darr;</b></p>
+        <div class="box_c" id="box_c"><a href="dna.html" style="text-decoration: none" style = "color:black"><font color=black><b>DNA</b></font></a></div>
+        <p class=third><b>&darr;</b></p>
+        <div class="box_d" id="box_d"><a href="proteins.html" style="text-decoration: none" style = "color:black"><font color=black><b>PROTEINS</b></font></a></div><br>
+    </div>
+    
+    <br>
+    <br>
+    <br>    
+    
+      <p class=second>Ready to move to the advanced stuff? Click <a href="advanced.html"> here</p>
+            
+    <footer>
+		<form action="index.html">
+            <input type="submit" value="Home">
+        </form>
+    </footer> 
+    
+    
+</body>
+</html>
